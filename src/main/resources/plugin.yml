@@ -1,0 +1,4 @@
+name: SetPingOnNameTag
+version: '${project.version}'
+main: com.ponchannn.setpingonnametag.SetPingOnNameTag
+api-version: '1.20'
