@@ -8,7 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class SetPingOnNameTag extends JavaPlugin {
     @Override
     public void onEnable() {
-        new SetPing().runTaskTimer(this, 0, 20 * 2);
+        new SetPing().runTaskTimer(this, 0, 20 * 1);
     }
 
     @Override
@@ -16,8 +16,6 @@ public final class SetPingOnNameTag extends JavaPlugin {
         // Plugin shutdown logic
         for (World world : Bukkit.getWorlds()) {
             for(Player player : world.getPlayers()) {
-                String name = player.getName();
-                int ping = player.getPing();
                 player.setPlayerListName(null);
             }
         }
